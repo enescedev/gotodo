@@ -1,13 +1,13 @@
 package main
 
 import (
+	"github.com/enescedev/gotodo/routes"
 	"github.com/gin-gonic/gin"
-	"./routes"
 )
 
 func main() {
 
 	router := gin.New()
-	routes.userRoute(router)
+	routes.UserRoute(router)
 	router.Run(":8080")
 }
